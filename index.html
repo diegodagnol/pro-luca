@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+        <style>
+            .container {
+                height: 100vh;
+            }
+            .fa-heart {
+                color: #ff0000
+            }
+            .img-flork {
+                height: 400px;
+                width: 100%;
+                object-fit: cover;
+            }
+            body {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1357%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1358)'%3e%3c/rect%3e%3cpath d='M291.03%2c550.271C306.8%2c549.334%2c318.03%2c536.702%2c325.797%2c522.945C333.399%2c509.481%2c337.848%2c493.678%2c330.736%2c479.949C323.102%2c465.212%2c307.616%2c455.23%2c291.03%2c455.829C275.279%2c456.398%2c264.071%2c469.11%2c256.002%2c482.649C247.669%2c496.631%2c240.798%2c513.098%2c248.285%2c527.551C256.239%2c542.907%2c273.766%2c551.297%2c291.03%2c550.271' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M935.207%2c135.689C959.879%2c137.573%2c987.42%2c133.279%2c1000.355%2c112.185C1013.703%2c90.419%2c1007.058%2c62.535%2c993.227%2c41.073C980.588%2c21.461%2c958.53%2c11.738%2c935.207%2c11.095C910.506%2c10.414%2c883.127%2c15.982%2c871.371%2c37.716C859.959%2c58.813%2c872.186%2c83.3%2c885.28%2c103.397C896.877%2c121.195%2c914.026%2c134.071%2c935.207%2c135.689' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1207.649%2c549.068C1256.661%2c549.971%2c1311.242%2c549.922%2c1339.046%2c509.55C1369.851%2c464.819%2c1366.141%2c404.893%2c1339.558%2c357.531C1312.391%2c309.129%2c1263.154%2c275.669%2c1207.649%2c275.453C1151.792%2c275.235%2c1100.388%2c307.293%2c1073.948%2c356.496C1048.796%2c403.302%2c1054.072%2c461.213%2c1084.376%2c504.86C1111.06%2c543.293%2c1160.869%2c548.207%2c1207.649%2c549.068' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M399.811%2c377.557C423.865%2c377.655%2c446.325%2c365.25%2c458.455%2c344.479C470.69%2c323.529%2c470.473%2c297.833%2c458.786%2c276.572C446.639%2c254.474%2c424.977%2c239.377%2c399.811%2c237.795C371.48%2c236.014%2c339.997%2c243.319%2c326.424%2c268.251C313.213%2c292.518%2c326.588%2c321.066%2c341.989%2c344.005C355.302%2c363.834%2c375.927%2c377.46%2c399.811%2c377.557' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M220.309%2c366.222C243.216%2c367.73%2c270.141%2c367.771%2c281.955%2c348.087C293.952%2c328.099%2c281.428%2c304.128%2c269.658%2c284.005C258.049%2c264.158%2c243.297%2c243.166%2c220.309%2c242.693C196.762%2c242.208%2c177.841%2c260.831%2c167.313%2c281.899C157.885%2c300.766%2c160.063%2c322.942%2c171.286%2c340.799C181.784%2c357.503%2c200.623%2c364.926%2c220.309%2c366.222' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1383.073%2c137.909C1399.278%2c137.92%2c1416.131%2c131.965%2c1423.63%2c117.599C1430.74%2c103.978%2c1424.305%2c88.081%2c1415.742%2c75.323C1408.301%2c64.238%2c1396.424%2c57.094%2c1383.073%2c57.177C1369.867%2c57.259%2c1358.454%2c64.755%2c1351.101%2c75.725C1342.613%2c88.389%2c1335.64%2c103.986%2c1342.611%2c117.545C1350.011%2c131.937%2c1366.89%2c137.898%2c1383.073%2c137.909' fill='rgba(142%2c 28%2c 28%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1357'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1358'%3e%3cstop stop-color='rgba(255%2c 129%2c 0%2c 0.55)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(158%2c 0%2c 0%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+            }
+        </style>
+</head>
+
+
+<body>
+    <main>
+        <div class="container d-flex flex-column justify-content-between">
+            <div class="row justify-content-center align-items-center flex-column my-5 py-5">
+                <div class="col-auto text-center mb-5">
+                    <h1 class="fs-2 mt-5">Você me desafiou!</h1>
+                    <p class="mb-5">Então pega essa, seu lindo!</p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger mt-5" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Aperte aqui!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="fs-4 fw-bolder mb-5">Luca, seu lindu <i class="fa-solid fa-heart fa-beat"></i></p>
+                                    <img src="https://i.pinimg.com/564x/c9/a7/50/c9a7507ca01703adbc9ce505af7b460f.jpg" class="img-fluid img-flork">
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-auto mt-5 pt-5">
+                <p class="text-center text-light">Por Diego Dall'Agnol</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c05e10b69d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
